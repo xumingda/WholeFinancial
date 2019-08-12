@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_79"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:background="@color/tab_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_79">
+
+        <com.ciba.wholefinancial.weiget.RoundImageView
+            android:layout_marginLeft="@dimen/dp_19"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_goods"
+            android:layout_width="@dimen/dp_50"
+            android:layout_height="@dimen/dp_50"
+            android:scaleType="fitXY"
+            app:type="round"
+            />
+
+
+        <TextView
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_15"
+            android:text="¥32x1"
+            android:layout_marginRight="@dimen/dp_20"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_goodsPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:gravity="center_vertical|right"
+            android:layout_toRightOf="@id/iv_goods"
+            android:id="@+id/tv_goodsName"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_15"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_width="@dimen/dp_135"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:text="啤酒鸭双拼套餐 拷贝"
+            />
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_goodsName"
+            android:id="@+id/tv_goodsUnit"
+            android:layout_marginLeft="@dimen/dp_2"
+            android:textColor="#737A80"
+            android:textSize="@dimen/sp_13"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dp_11"
+            android:layout_height="wrap_content"
+            android:text="/份"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

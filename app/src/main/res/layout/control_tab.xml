@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tab_background"
+    >
+
+
+
+    <com.ciba.wholefinancial.weiget.MyLinearLayout
+        android:id="@+id/my_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+        <!-- 内存区域 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/fl_content_fragment"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+            <!-- 底部导航 -->
+
+            <FrameLayout
+                android:id="@+id/fl_bottom"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/dp_50"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@android:color/transparent">
+
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_1"
+                    android:background="@color/line_color_gray" />
+
+                <RadioGroup
+                    android:id="@+id/rg_content"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/dp_50"
+                    android:layout_gravity="bottom"
+                    android:background="@android:color/white"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:textColor="@drawable/choose_textcolor"
+                        android:id="@+id/rb_content_home"
+                        style="@style/main_tab_style"
+                        android:checked="true"
+                        android:drawableTop="@drawable/tab_home"
+                        android:gravity="center"
+                        android:text="首页"
+                        android:textSize="@dimen/sp_11" />
+
+                    <RadioButton
+                        android:textColor="@drawable/choose_textcolor"
+                        android:id="@+id/rb_content_order"
+                        style="@style/main_tab_style"
+                        android:drawableTop="@drawable/tab_order_bg"
+                        android:gravity="center"
+                        android:text="订单"
+                        android:textSize="@dimen/sp_11" />
+
+
+                    <RadioButton
+                        android:textColor="@drawable/choose_textcolor"
+                        android:id="@+id/rb_content_set"
+                        style="@style/main_tab_style"
+                        android:drawableTop="@drawable/tab_set_bg"
+                        android:gravity="center"
+                        android:text="设置"
+                        android:textSize="@dimen/sp_11" />
+
+                </RadioGroup>
+
+
+            </FrameLayout>
+        </RelativeLayout>
+    </com.ciba.wholefinancial.weiget.MyLinearLayout>
+</FrameLayout>

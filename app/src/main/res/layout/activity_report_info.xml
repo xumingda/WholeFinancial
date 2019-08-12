@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        style="@style/tabTitleStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="举报内容"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_15" />
+
+
+        <ImageView
+            android:id="@+id/iv_top_back"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_14"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:src="@mipmap/top_back"
+            android:gravity="center_vertical"
+            android:scaleType="fitCenter" />
+        <View
+            android:id="@+id/view_back"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4f4f4"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_17"
+            android:layout_marginLeft="@dimen/dp_13"
+            android:layout_marginRight="@dimen/dp_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            android:text="举报主题：我要举报橙红餐馆的饭菜不卫生。"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_14"
+            />
+        <TextView
+            android:layout_marginTop="@dimen/dp_17"
+            android:layout_marginLeft="@dimen/dp_13"
+            android:layout_marginRight="@dimen/dp_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="举报内容:"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_14"
+            />
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_marginTop="@dimen/dp_19"
+            android:layout_marginLeft="@dimen/dp_13"
+            android:layout_marginRight="@dimen/dp_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="我今天在永川市肖记石磨豆花吃饭，他们的酸菜鱼里面居然吃 出了钢丝钉，而且收银员态度不好，收我41元钱，我要发票她 说：没有一元"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/sp_13"
+            />
+        <RelativeLayout
+            android:layout_marginRight="@dimen/dp_13"
+            android:layout_marginLeft="@dimen/dp_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_one"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_100"
+                android:scaleType="fitXY"
+                android:layout_marginTop="@dimen/dp_41"
+                />
+            <ImageView
+                android:layout_toRightOf="@id/iv_one"
+                android:layout_marginLeft="@dimen/dp_9"
+                android:id="@+id/iv_two"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_100"
+                android:scaleType="fitXY"
+                android:layout_marginTop="@dimen/dp_41"
+                />
+            <ImageView
+                android:layout_toRightOf="@id/iv_two"
+                android:layout_marginLeft="@dimen/dp_9"
+                android:id="@+id/iv_three"
+                android:layout_width="@dimen/dp_100"
+                android:layout_height="@dimen/dp_100"
+                android:scaleType="fitXY"
+                android:layout_marginTop="@dimen/dp_41"
+                />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

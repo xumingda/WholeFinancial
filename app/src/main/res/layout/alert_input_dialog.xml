@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="@dimen/dp_246"
+        android:layout_height="@dimen/dp_281"
+        android:background="@drawable/alert_dialog_shape">
+    <TextView
+        android:visibility="gone"
+        android:layout_marginTop="20dp"
+        android:text="标题"
+        android:id="@+id/altert_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/attendanceColor"
+        android:textSize="17dp" />
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_cancel"
+        android:layout_alignParentRight="true"
+        android:layout_width="50dp"
+        android:layout_height="30dp">
+        <ImageView
+
+            android:layout_margin="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_marginTop="@dimen/dp_63"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:textColor="#ACAEB4"
+        android:textSize="@dimen/sp_17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="类别名称"
+        />
+
+
+    <EditText
+        android:textColorHint="#B8B8B8"
+        android:inputType="number"
+        android:textSize="@dimen/sp_17"
+        android:hint="请输入名称"
+        android:layout_below="@id/tv_title"
+        android:id="@+id/alert_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_26"
+        android:background="@null"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColor="@color/text_black" />
+    <View
+        android:id="@+id/line"
+        android:layout_below="@id/alert_input"
+        android:layout_marginTop="@dimen/dp_14"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="#DBDBDB"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/line"
+        android:layout_marginTop="@dimen/dp_48"
+        android:background="@mipmap/btn_clock_success"
+        android:id="@+id/tv_commit"
+        android:layout_width="@dimen/dp_152"
+        android:layout_height="@dimen/dp_50"
+        android:text="确定"
+        android:textSize="@dimen/sp_17"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

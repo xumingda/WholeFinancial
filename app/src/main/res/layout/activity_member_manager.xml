@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        style="@style/tabTitleStyle"
+        >
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="会员管理"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/sp_15" />
+
+
+        <ImageView
+            android:id="@+id/iv_top_back"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_14"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:src="@mipmap/top_back"
+            android:gravity="center_vertical"
+            android:scaleType="fitCenter" />
+        <View
+            android:id="@+id/view_back"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="@dimen/dp_16"
+            android:layout_height="@dimen/dp_16"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_14"
+            android:src="@mipmap/search"
+            android:gravity="center_vertical"
+            android:scaleType="fitXY" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_below="@id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_45"
+        android:background="@color/tab_background"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <!-- 页签指示部分 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45">
+            <View
+                android:id="@+id/line"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_13"
+                android:background="#3F4658"
+                />
+            <TextView
+                android:id="@+id/tv_people"
+                android:layout_marginRight="@dimen/dp_30"
+                android:layout_toLeftOf="@id/line"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/sp_15"
+                android:textColor="@color/text_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tv_count_money"
+                android:layout_marginLeft="@dimen/dp_30"
+                android:layout_toRightOf="@id/line"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/sp_15"
+                android:textColor="@color/text_black"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_12"
+        android:background="@color/tab_background"
+        android:id="@+id/rl_title"
+        android:layout_below="@id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_55">
+
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_member_info"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_13"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="会员信息"
+            />
+
+
+
+
+        <TextView
+            android:id="@+id/tv_member_leave"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_13"
+            android:layout_width="0dp"
+            android:layout_weight="1.5"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="会员等级"
+            />
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_13"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="余额"
+            />
+        <TextView
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_13"
+            android:text="操作"
+            android:layout_centerVertical="true"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            />
+    </LinearLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_below="@id/rl_title"
+        android:divider="#f4f4f4"
+        android:dividerHeight="@dimen/dp_1"
+
+        android:background="@color/tab_background"
+        android:id="@+id/lv_member"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+    <View
+        android:visibility="gone"
+        android:layout_marginTop="@dimen/dp_138"
+        android:id="@+id/v_empty"
+        android:layout_below="@id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_97"
+        android:background="@mipmap/img_empty"
+        />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_empty"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/v_empty"
+        android:textColor="#5D646E"
+        android:textSize="@dimen/sp_14"
+        android:text="还没有数据"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

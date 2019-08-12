@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_main"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/tab_background"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        style="@style/tabTitleStyle">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="编辑"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_15" />
+
+
+        <ImageView
+            android:id="@+id/iv_top_back"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_14"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:src="@mipmap/top_back"
+            android:gravity="center_vertical"
+            android:scaleType="fitCenter" />
+        <View
+            android:id="@+id/view_back"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+    <View
+        android:layout_below="@id/rl_head"
+        android:id="@+id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="#F4F4F4"
+        />
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_59"
+        android:layout_below="@id/line_top"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp_28"
+        android:layout_marginRight="@dimen/dp_28">
+
+
+
+        <TextView
+            android:textColorHint="#ACAEB4"
+            android:text="店铺名称"
+            android:inputType="number"
+            android:layout_marginTop="@dimen/dp_8"
+            android:id="@+id/tv_name_title"
+            android:layout_width="@dimen/dp_114"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:maxLength="6"
+            android:singleLine="true"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/sp_15" />
+        <TextView
+
+            android:text="深圳市陈大嫂桂林米粉店（龙华店）"
+            android:layout_below="@id/tv_name_title"
+            android:layout_marginTop="@dimen/dp_8"
+            android:id="@+id/tv_name"
+            android:layout_width="@dimen/dp_114"
+            android:layout_height="@dimen/dp_30"
+            android:background="@null"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_15" />
+
+
+        <View
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_below="@id/tv_name"
+            android:id="@+id/line_one"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="#F4F4F4"
+            />
+
+        <TextView
+            android:textColorHint="#ACAEB4"
+            android:text="餐桌编码"
+            android:layout_below="@id/line_one"
+            android:layout_marginTop="@dimen/dp_16"
+            android:id="@+id/tv_code"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_30"
+            android:maxLength="16"
+            android:background="@null"
+            android:singleLine="true"
+            android:inputType="number"
+            android:textColor="@color/text_color_gray"
+            android:textSize="@dimen/sp_15" />
+        <EditText
+            android:text="F30"
+            android:layout_below="@id/tv_code"
+            android:layout_marginTop="@dimen/dp_8"
+            android:id="@+id/et_code"
+            android:layout_width="@dimen/dp_114"
+            android:layout_height="@dimen/dp_30"
+            android:background="@null"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_15" />
+        <View
+            android:layout_marginTop="@dimen/dp_12"
+            android:layout_below="@id/et_code"
+            android:id="@+id/line_two"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:background="#F4F4F4"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/tab_background"
+        android:id="@+id/ll_bottom"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+        <TextView
+            android:id="@+id/tv_save"
+            android:background="#2E77ED"
+            android:gravity="center"
+            android:text="保存"
+            android:textSize="@dimen/sp_15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/tab_background"
+            />
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:background="#E5E6E7"
+            />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            android:gravity="center"
+            android:text="删除"
+            android:textSize="@dimen/sp_15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/text_black"
+            />
+        <View
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="match_parent"
+            android:background="#E5E6E7"
+            />
+
+        <TextView
+            android:id="@+id/tv_download"
+            android:gravity="center"
+            android:text="下载二维码"
+            android:textSize="@dimen/sp_15"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textColor="@color/text_black"
+            />
+    </LinearLayout>
+    <View
+        android:layout_above="@id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="#f4f4f4"
+        />
+
+</RelativeLayout>
+        

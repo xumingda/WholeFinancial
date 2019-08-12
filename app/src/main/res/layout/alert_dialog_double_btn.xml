@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dp_246"
+    android:layout_height="@dimen/dp_144"
+    android:background="@android:color/transparent"
+    android:gravity="center" >
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_246"
+        android:layout_height="@dimen/dp_160"
+        android:background="@drawable/alert_dialog_shape"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/alert_dialog_title"
+            android:layout_width="@dimen/dp_246"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_25"
+            android:gravity="center"
+            android:text="提示"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_17" />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_11"
+            android:id="@+id/alert_dialog_content"
+            android:layout_width="@dimen/dp_246"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="您好，请设置摇一摇主标题！"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_17" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_marginTop="@dimen/dp_26"
+            android:background="#f4f4f4"
+             />
+
+        <LinearLayout
+            android:layout_width="@dimen/dp_246"
+            android:layout_height="@dimen/dp_53"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/tv_cancle"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/mybtnleftselector"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="#737A80"
+                android:textSize="@dimen/sp_17" />
+
+            <View
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="fill_parent"
+                android:background="#f4f4f4" />
+
+            <Button
+                android:id="@+id/tv_ensure"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/mybtnrightselector"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/errorColor"
+                android:textSize="@dimen/sp_17" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:background="#000000"
+        android:scaleType="fitXY"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_top_back"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_14"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:src="@mipmap/white_back"
+            android:gravity="center_vertical"
+            android:scaleType="fitCenter" />
+        <View
+            android:id="@+id/view_back"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+        <TextView
+            android:id="@+id/tv_palce"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxLines="1"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_top_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/tab_background"
+            android:textSize="@dimen/sp_14" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_marginBottom="@dimen/dp_57"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/take_photo"
+        android:layout_width="@dimen/dp_43"
+        android:layout_height="@dimen/dp_36" />
+    <View
+        android:id="@+id/view_pic"
+        android:layout_width="@dimen/dp_100"
+        android:layout_height="@dimen/dp_100"
+        android:layout_marginBottom="@dimen/dp_57"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        />
+    <View
+        android:id="@+id/middle_line"
+        android:layout_centerInParent="true"
+        android:layout_width="1dp"
+        android:layout_height="1dp"/>
+    <Button
+        android:layout_toLeftOf="@id/middle_line"
+        android:layout_marginRight="@dimen/dp_5"
+        android:visibility="gone"
+        android:id="@+id/btn_again"
+        android:background="@drawable/shape_again"
+        android:layout_marginLeft="@dimen/dp_24"
+        android:layout_width="@dimen/dp_162"
+        android:layout_height="@dimen/dp_45"
+        android:text="重新拍"
+        android:textSize="@dimen/sp_15"
+        android:textColor="@color/tab_background"
+        android:layout_marginBottom="@dimen/dp_57"
+        android:layout_alignParentBottom="true"
+       />
+    <Button
+        android:layout_toRightOf="@id/middle_line"
+        android:layout_marginLeft="@dimen/dp_5"
+        android:visibility="gone"
+        android:id="@+id/btn_ok"
+        android:background="@drawable/shape_ok"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_24"
+        android:layout_width="@dimen/dp_162"
+        android:layout_height="@dimen/dp_45"
+        android:text="使用该照片"
+        android:textSize="@dimen/sp_15"
+        android:textColor="@color/tab_background"
+        android:layout_marginBottom="@dimen/dp_57"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

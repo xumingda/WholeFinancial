@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name" translatable="false">商宝</string>
+    <string name="cancel" translatable="false">取消</string>
+    <string name="title" translatable="false">请选择时间</string>
+    <string name="confirm" translatable="false">确定</string>
+    <string name="year" translatable="false">年</string>
+    <string name="month" translatable="false">月</string>
+    <string name="day" translatable="false">日</string>
+    <string name="hour" translatable="false">时</string>
+    <string name="minute" translatable="false">分</string>
+    <string name="send_to" translatable="false">Send to...</string>
+    <string name="read_xlsx" translatable="false">Read XLSX</string>
+    <string name="write_xlsx" translatable="false">Write XLSX</string>
+    <string name="select_date" translatable="false">选择日期</string>
+    <string name="current_date" translatable="false">当前日期</string>
+    <string name="select_time" translatable="false">选择时间</string>
+    <string name="current_time" translatable="false">当前时间</string>
+</resources>

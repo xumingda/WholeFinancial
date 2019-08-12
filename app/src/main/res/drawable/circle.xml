@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval"
+    android:useLevel="false" >
+
+    <solid android:color="@color/tab_background" />
+
+    //值越大，里面圆越小
+    <stroke
+        android:width="@dimen/dp_10"
+        android:color="@color/line_gray" />
+
+
+
+</shape>
+    

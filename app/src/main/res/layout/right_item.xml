@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/tab_background" >
+   
+    <TextView 
+        android:textColor="@color/text_black"
+        android:id="@+id/right_lv"
+        android:gravity="left|center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_34"
+        android:text="折扣商品（超过限购可优惠） 拷贝"
+        android:textSize="@dimen/sp_12"
+        />
+	<View 
+	    android:layout_width="match_parent"
+	    android:layout_height="@dimen/dp_1"
+	    android:background="#F4F4F4"
+	    />
+    <com.ciba.wholefinancial.weiget.CostomListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/right_cos_list"
+        >       
+    </com.ciba.wholefinancial.weiget.CostomListView>
+       
+</LinearLayout>

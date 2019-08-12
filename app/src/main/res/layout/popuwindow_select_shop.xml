@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <TextView
+        android:background="@color/tab_background"
+        android:text="所有店铺"
+        android:textSize="@dimen/sp_17"
+        android:textColor="@color/errorColor"
+        android:id="@+id/pop_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_62"
+        android:gravity="center"
+        />
+
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+       />
+    <ListView
+        android:background="#F7F7F7"
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_180"
+        android:divider="#00000000"
+        android:choiceMode="singleChoice"
+        >
+    </ListView>
+    <View
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/pop_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="6dp"
+        android:text="取消"
+        android:gravity="center"
+       />
+</LinearLayout>
+

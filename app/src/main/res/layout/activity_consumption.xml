@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        style="@style/tabTitleStyle">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消费清单"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_15" />
+
+
+        <ImageView
+            android:id="@+id/iv_top_back"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_14"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:src="@mipmap/top_back"
+            android:gravity="center_vertical"
+            android:scaleType="fitCenter" />
+    </RelativeLayout>
+    <View
+        android:id="@+id/line_top"
+        android:layout_below="@id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:background="#f4f4f4"
+        />
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_below="@id/line_top"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_54"
+                android:background="@color/tab_background"
+                >]
+                <ImageView
+                    android:id="@+id/iv"
+                    android:src="@mipmap/small_order"
+                    android:scaleType="fitCenter"
+                    android:layout_centerVertical="true"
+                    android:layout_width="@dimen/dp_24"
+                    android:layout_height="@dimen/dp_24"
+                    android:layout_marginLeft="@dimen/dp_19"
+                    />
+                <TextView
+                    android:text="桌牌号：20号"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/errorColor"
+                    android:textSize="@dimen/sp_14"
+                    android:layout_toRightOf="@id/iv"
+                    android:layout_marginLeft="@dimen/dp_9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textColor="@color/text_color_gray"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2019/2/21  15:26:51"
+                    android:textSize="@dimen/sp_12"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+            <ListView
+                android:layout_marginTop="@dimen/dp_7"
+                android:background="@color/tab_background"
+                android:id="@+id/lv_order"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_224"
+                android:divider="#00000000"
+                android:choiceMode="singleChoice"
+                >
+            </ListView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_1"
+                android:background="#f4f4f4"
+                />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_63"
+                android:background="@color/tab_background"
+                >
+
+                <TextView
+                    android:id="@+id/tv_price"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:text="¥75"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp_18"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_toLeftOf="@id/tv_price"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dp_20"
+                    android:text="小计："
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp_13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp_5"
+                android:background="@color/tab_background"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_44">
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp_19"
+                    android:textSize="@dimen/sp_15"
+                    android:textColor="@color/text_black"
+                    android:text="人数：3人"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginTop="@dimen/dp_5"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_225"
+                android:background="@color/tab_background"
+                >
+                <TextView
+                    android:id="@+id/tv_remark_title"
+                    android:textColor="@color/text_black"
+                    android:textSize="@dimen/sp_15"
+                    android:text="备注："
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_16"
+                    android:layout_marginLeft="@dimen/dp_19"
+                    />
+                <TextView
+                    android:id="@+id/tv_remark"
+                    android:textSize="@dimen/sp_13"
+                    android:textColor="#111123"
+                    android:text="老板，帮我少放点辣椒，啤酒鸭饭里不要啤酒，烤肉双 拼不要肉，谢谢！ 拷贝"
+                    android:layout_below="@id/tv_remark_title"
+                    android:layout_marginTop="@dimen/dp_17"
+                    android:layout_marginRight="@dimen/dp_19"
+                    android:layout_marginLeft="@dimen/dp_19"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_80"
+                    />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

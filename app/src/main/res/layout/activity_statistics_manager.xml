@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        style="@style/tabTitleStyle">
+
+        <TextView
+            android:drawablePadding="@dimen/dp_10"
+            android:drawableRight="@mipmap/down_black"
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="商户列表"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_15" />
+
+
+        <ImageView
+            android:id="@+id/iv_top_back"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_14"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:src="@mipmap/top_back"
+            android:gravity="center_vertical"
+            android:scaleType="fitCenter" />
+        <View
+            android:id="@+id/view_back"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tab_background"
+        android:orientation="vertical" >
+        <!-- 页签指示部分 -->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45">
+            <com.ciba.wholefinancial.weiget.TabSlidingIndicator
+                android:id="@+id/indicator_concern_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_45"
+                android:gravity="center"
+                android:textSize="@dimen/sp_14"
+                app:pstsDividerColor="#fff"
+                app:pstsIndicatorColor="#FF6632"
+                app:pstsIndicatorHeight="1dp"
+                app:pstsShouldExpand="true"
+                app:pstsTabPaddingLeftRight="5dp"
+                app:pstsUnderlineHeight="0dp" />
+
+
+            <View
+                android:id="@+id/view_middle"
+                android:layout_centerInParent="true"
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_13"
+
+                />
+            <View
+                android:layout_toRightOf="@id/view_middle"
+                android:layout_marginLeft="@dimen/dp_60"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_13"
+                android:background="@color/text_color_black"
+                />
+            <View
+                android:layout_toLeftOf="@id/view_middle"
+                android:layout_marginRight="@dimen/dp_60"
+                android:layout_centerVertical="true"
+                android:layout_width="@dimen/dp_1"
+                android:layout_height="@dimen/dp_13"
+                android:background="@color/text_color_black"
+                />
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="5dp"
+            android:background="@color/tab_background" />
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:background="@color/tab_background"
+            >
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/dp_19"
+                android:layout_marginRight="@dimen/dp_19"
+                android:background="@drawable/shape_corner"
+                android:layout_weight="4"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_35">
+                <TextView
+                    android:id="@+id/tv_middle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dp_30"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:text="至"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="@dimen/sp_12" />
+
+
+                    <TextView
+                        android:layout_toLeftOf="@id/tv_middle"
+                        android:id="@+id/tv_startTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_5"
+                        android:text="2019-3-14"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/sp_12" />
+
+
+
+                    <TextView
+                        android:layout_toRightOf="@id/tv_middle"
+                        android:id="@+id/tv_endTime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:paddingLeft="@dimen/dp_5"
+                        android:paddingRight="@dimen/dp_5"
+                        android:text="2019-3-14"
+                        android:textColor="@color/text_color_black"
+                        android:textSize="@dimen/sp_12" />
+
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btn_search"
+                android:background="@drawable/shape_search"
+                android:textColor="@color/text_color_black"
+                android:text="搜索"
+                android:layout_marginRight="@dimen/dp_19"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp_35" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_19"
+            android:layout_marginRight="@dimen/dp_19"
+            android:background="@drawable/shape_statistics"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_50"
+            android:layout_marginBottom="@dimen/dp_20"
+            >
+            <TextView
+                android:layout_marginLeft="@dimen/dp_20"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="累计收入"
+                android:textColor="@color/tab_background"
+                />
+            <TextView
+                android:id="@+id/tv_totalMoney"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tab_background"
+                android:textSize="@dimen/sp_20"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+    <com.ciba.wholefinancial.weiget.NoScrollViewPager
+        android:layout_marginTop="@dimen/dp_8"
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.ciba.wholefinancial.weiget.NoScrollViewPager>
+</LinearLayout>

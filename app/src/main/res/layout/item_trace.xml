@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rlTimeline"
+            android:layout_width="32dp"
+            android:layout_height="@dimen/dp_111">
+
+            <TextView
+                android:id="@+id/tvTopLine"
+                android:layout_width="0.5dp"
+                android:layout_height="@dimen/dp_12"
+                android:layout_centerHorizontal="true"
+                android:background="#FB4A40" />
+
+            <TextView
+                android:id="@+id/tvDot"
+                android:layout_width="@dimen/dp_8"
+                android:layout_height="@dimen/dp_8"
+                android:layout_below="@id/tvTopLine"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/timelline_dot_normal" />
+
+
+            <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/tvDot"
+                android:layout_centerHorizontal="true"
+                android:background="#FB4A40" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlCenter"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_111"
+            android:paddingBottom="6dp"
+            android:paddingRight="10dp"
+            android:paddingTop="6dp">
+            <ImageView
+                android:id="@+id/iv_state"
+                android:layout_marginTop="@dimen/dp_4"
+                android:layout_width="@dimen/dp_17"
+                android:layout_height="@dimen/dp_17"
+                android:src="@mipmap/clock_in_state"
+                android:scaleType="center"
+                />
+            <TextView
+                android:layout_marginTop="@dimen/dp_14"
+                android:layout_below="@id/iv_state"
+                android:id="@+id/tvAcceptTime_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上班时间:"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/sp_13" />
+            <TextView
+                android:layout_marginTop="@dimen/dp_6"
+                android:layout_below="@id/tvAcceptTime_title"
+                android:id="@+id/tvAcceptTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20:55:28"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/sp_13" />
+
+            <TextView
+                android:id="@+id/tvAcceptStation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvAcceptTime"
+                android:layout_marginTop="@dimen/dp_10"
+                android:text="快件在 深圳 ,准备送往下一站 深圳集散中心 [深圳市]"
+                android:textColor="@color/text_color_black"
+                android:textSize="@dimen/sp_13" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/ll_main"
+    android:gravity="center_horizontal"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        style="@style/tabTitleStyle">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="记账"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_15" />
+
+
+        <ImageView
+            android:id="@+id/iv_top_back"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_14"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:src="@mipmap/top_back"
+            android:gravity="center_vertical"
+            android:scaleType="fitCenter" />
+        <View
+            android:id="@+id/view_back"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <TextView
+        android:background="@color/errorColor"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="请向客户收款！"
+        android:textColor="@color/tab_background"
+        android:gravity="center"
+        />
+   <ImageView
+       android:layout_marginTop="@dimen/dp_100"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:src="@mipmap/picket"
+       android:scaleType="centerCrop"
+       />
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_marginTop="@dimen/dp_10"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="付款金额:256.00元"
+        android:textSize="@dimen/sp_15"
+        />
+    <Button
+        android:id="@+id/btn_pay"
+        android:layout_width="@dimen/dp_200"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_200"
+        android:background="@drawable/login_button_selector"
+        android:text="已收款"
+        android:textColor="@color/tab_background"
+        android:textSize="@dimen/sp_17" />
+</LinearLayout>

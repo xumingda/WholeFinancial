@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_96"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:background="@color/tab_background"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_96">
+
+        <com.ciba.wholefinancial.weiget.RoundImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_goods"
+            android:layout_width="@dimen/dp_77"
+            android:layout_height="@dimen/dp_77"
+            android:scaleType="fitXY"
+            app:type="round"
+            />
+
+
+        <ImageView
+            android:layout_marginRight="@dimen/dp_18"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_right"
+            android:src="@mipmap/edit"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_17" />
+        <TextView
+            android:layout_toLeftOf="@id/iv_right"
+            android:layout_marginRight="@dimen/dp_18"
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_delete"
+            android:layout_width="@dimen/dp_60"
+            android:gravity="center"
+            android:layout_height="@dimen/dp_30"
+            android:textColor="@color/tab_background"
+            android:background="@drawable/shape_attend_btn"
+            android:text="删除"
+            />
+
+        <TextView
+            android:layout_toLeftOf="@id/tv_delete"
+            android:layout_toRightOf="@id/iv_goods"
+            android:id="@+id/tv_goodsName"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_15"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_width="@dimen/dp_135"
+            android:layout_marginTop="@dimen/dp_18"
+            android:layout_height="wrap_content"
+            android:text="啤酒鸭双拼套餐 拷贝"
+            />
+        <TextView
+            android:layout_toRightOf="@id/iv_goods"
+            android:layout_below="@id/tv_goodsName"
+            android:id="@+id/tv_goodsPrice"
+            android:layout_marginLeft="@dimen/dp_12"
+            android:textColor="@color/errorColor"
+            android:textSize="@dimen/sp_15"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_width="@dimen/dp_135"
+            android:layout_marginTop="@dimen/dp_11"
+            android:layout_height="wrap_content"
+            android:text="¥32/份"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>

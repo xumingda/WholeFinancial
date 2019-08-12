@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/LoginGrayBackground"
+    android:id="@+id/rl_main"
+    >
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@mipmap/myself_bg"
+        >
+        <ImageView
+            android:layout_marginTop="@dimen/dp_17"
+            android:id="@+id/iv_top_back"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_14"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:src="@mipmap/white_back"
+            android:gravity="center_vertical"
+            android:scaleType="fitCenter" />
+        <View
+            android:id="@+id/view_back"
+            android:layout_width="100dp"
+            android:layout_height="50dp"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_marginTop="@dimen/dp_17"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收益明细"
+            android:gravity="center"
+            android:textColor="@color/tab_background"
+            android:textSize="@dimen/sp_15" />
+
+        <TextView
+
+            android:layout_marginTop="@dimen/dp_31"
+            android:layout_below="@id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title_one"
+            android:text="累积收益（元）"
+            android:gravity="center"
+            android:textColor="#FFB089"
+            android:textSize="@dimen/sp_13" />
+        <TextView
+            android:layout_marginTop="@dimen/dp_16"
+            android:layout_below="@id/tv_title_one"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_commission"
+            android:gravity="center"
+            android:textColor="@color/tab_background"
+            android:textSize="@dimen/sp_20" />
+    </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        android:layout_below="@id/rl_head"
+        android:id="@+id/lv_commission"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:divider="#f4f4f4"
+        android:dividerHeight="@dimen/dp_1"
+        />
+    <View
+        android:layout_marginTop="@dimen/dp_20"
+        android:id="@+id/v_empty"
+        android:visibility="gone"
+        android:layout_below="@id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_97"
+        android:background="@mipmap/img_empty"
+        />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_empty"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/v_empty"
+        android:textColor="#5D646E"
+        android:textSize="@dimen/sp_14"
+        android:text="还没有收益明细"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

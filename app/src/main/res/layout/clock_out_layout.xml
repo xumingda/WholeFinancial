@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    >
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="@dimen/dp_315"
+        android:layout_height="@dimen/dp_360"
+        android:background="@drawable/shape_white"
+        android:gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:layout_marginTop="@dimen/dp_52"
+            android:layout_width="@dimen/dp_60"
+            android:layout_height="@dimen/dp_46"
+            android:src="@mipmap/clock_out_success"
+            android:scaleType="fitCenter"
+            />
+        <TextView
+            android:textSize="@dimen/sp_20"
+            android:layout_marginTop="@dimen/dp_13"
+            android:id="@+id/tv_clock_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="打卡成功!"
+            android:textColor="@color/text_green"
+            />
+
+        <TextView
+            android:textSize="@dimen/sp_25"
+            android:layout_marginTop="@dimen/dp_24"
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/text_black"
+            />
+        <TextView
+            android:textSize="@dimen/sp_15"
+            android:layout_marginTop="@dimen/dp_21"
+            android:id="@+id/tv_slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="工作一天辛苦了，回家早点休息！"
+            android:textColor="@color/text_black"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_40"
+            android:background="@mipmap/btn_clock_out_success"
+            android:id="@+id/tv_commit"
+            android:layout_width="@dimen/dp_157"
+            android:layout_height="@dimen/dp_50"
+            android:text="确定"
+            android:textSize="@dimen/sp_17"
+            android:textColor="#ffffff"
+            android:gravity="center"
+           />
+    </LinearLayout>
+</LinearLayout>
+

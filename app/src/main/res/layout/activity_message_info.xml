@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        style="@style/tabTitleStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消息内容"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_15" />
+
+
+        <ImageView
+            android:id="@+id/iv_top_back"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_14"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:src="@mipmap/top_back"
+            android:gravity="center_vertical"
+            android:scaleType="fitCenter" />
+        <View
+            android:id="@+id/view_back"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+        <Button
+            android:gravity="right|center_vertical"
+            android:background="@null"
+            android:id="@+id/btn_delect"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp_14"
+            android:text="删除 " />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f4f4f4"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_17"
+            android:layout_marginLeft="@dimen/dp_13"
+            android:layout_marginRight="@dimen/dp_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_title"
+            android:text="生活提醒"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/sp_14"
+            />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_marginTop="@dimen/dp_17"
+            android:layout_marginLeft="@dimen/dp_13"
+            android:layout_marginRight="@dimen/dp_13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2019-2-19"
+            android:textColor="#ACAEB4"
+            android:textSize="@dimen/sp_10"
+            />
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_marginTop="@dimen/dp_27"
+            android:layout_marginLeft="@dimen/dp_13"
+            android:layout_marginRight="@dimen/dp_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="您的额度已经超过未来的就飞快的将会计分录卡的减肥多了几 放大大考虑到附近卡咖啡就对啦开始加奋达科技离开的房间了肯"
+            android:textColor="@color/text_color_black"
+            android:textSize="@dimen/sp_12"
+            />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

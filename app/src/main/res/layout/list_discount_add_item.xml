@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+    <LinearLayout
+        android:layout_marginBottom="@dimen/dp_22"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_35">
+
+        <EditText
+            android:id="@+id/et_count"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_35"
+            android:layout_weight="1"
+            android:background="@drawable/shape_edit"
+            android:hint="单位/次"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/dp_10"
+            android:textColorHint="#e2e2e2"
+            android:textSize="@dimen/sp_12" />
+
+        <EditText
+            android:id="@+id/et_discount"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_35"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@drawable/shape_edit"
+            android:hint="单位/折"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/dp_10"
+            android:textColorHint="#e2e2e2"
+            android:textSize="@dimen/sp_12" />
+
+        <EditText
+            android:id="@+id/et_time"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_35"
+            android:layout_weight="1"
+            android:background="@drawable/shape_edit"
+            android:hint="单位/天"
+            android:inputType="numberDecimal"
+            android:paddingLeft="@dimen/dp_10"
+            android:textColorHint="#e2e2e2"
+            android:textSize="@dimen/sp_12" />
+
+    </LinearLayout>
+</RelativeLayout>

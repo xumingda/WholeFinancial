@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_39"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_39">
+        
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_code"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:textColor="#7A7E96"
+            android:textSize="@dimen/sp_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="13722"
+            />
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:id="@+id/tv_city"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp_16"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="说说"
+            />
+
+
+    </RelativeLayout>
+</RelativeLayout>

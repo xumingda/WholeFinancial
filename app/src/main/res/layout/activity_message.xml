@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f4f4f4"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        style="@style/tabTitleStyle">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="消息"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/sp_15" />
+
+
+        <ImageView
+            android:id="@+id/iv_top_back"
+            android:layout_width="@dimen/dp_8"
+            android:layout_height="@dimen/dp_14"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp_14"
+            android:src="@mipmap/top_back"
+            android:gravity="center_vertical"
+            android:scaleType="fitCenter" />
+        <View
+            android:id="@+id/view_back"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"/>
+
+    </RelativeLayout>
+    <View
+        android:background="#f4f4f4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        />
+    <ListView
+
+        android:background="@color/tab_background"
+        android:id="@+id/lv_message"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:divider="#f4f4f4"
+        android:dividerHeight="@dimen/dp_1"
+        />
+    <View
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/dp_130"
+        android:id="@+id/v_empty"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_97"
+        android:background="@mipmap/img_empty"
+        />
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_empty"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_centerHorizontal="true"
+        android:textColor="#5D646E"
+        android:textSize="@dimen/sp_14"
+        android:text="还没有消息"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
