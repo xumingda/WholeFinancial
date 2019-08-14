@@ -1,33 +1,33 @@
 -- Merging decision tree log ---
 manifest
-ADDED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml:2:1-9:12
-INJECTED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml:2:1-9:12
-INJECTED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml:2:1-9:12
-INJECTED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml:2:1-9:12
-INJECTED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml:2:1-9:12
-INJECTED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml:2:1-9:12
-INJECTED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml:2:1-9:12
+ADDED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml:2:1-9:12
+INJECTED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml:2:1-9:12
+INJECTED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml:2:1-9:12
+INJECTED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml:2:1-9:12
+INJECTED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml:2:1-9:12
+INJECTED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml:2:1-9:12
+INJECTED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml:2:1-9:12
 	package
-		ADDED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml:3:5-33
-		INJECTED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml
-		INJECTED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml
+		ADDED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml:3:5-33
+		INJECTED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml
+		INJECTED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml
 	android:versionName
-		ADDED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml:5:5-30
-		INJECTED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml
-		INJECTED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml
+		ADDED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml:5:5-30
+		INJECTED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml
+		INJECTED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml
 	xmlns:android
-		ADDED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml:2:11-69
+		ADDED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml:4:5-28
-		INJECTED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml
-		INJECTED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml
+		ADDED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml:4:5-28
+		INJECTED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml
+		INJECTED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml
 application
-ADDED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml:7:5-20
+ADDED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml:7:5-20
 uses-sdk
-INJECTED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml
-INJECTED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml
+INJECTED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml
+INJECTED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml
-		ADDED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml
-		INJECTED from D:\WholeFinancial\volleyplus_lib\AndroidManifest.xml
+		INJECTED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml
+		ADDED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml
+		INJECTED from D:\WholeFinancial\WholeFinancial\volleyplus_lib\AndroidManifest.xml
