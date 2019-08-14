@@ -119,15 +119,15 @@ public class AddMerchantInfoActivity extends BaseActivity implements View.OnClic
     private EditText et_bank,et_accountBank;
     private EditText et_weixinPayRate,et_alipayRate,et_xqRate;
     private EditText et_remark,et_weixinNumber,et_alipayNumber,et_creditCode,et_business_scope;
+    private CheckBox CbBasketball;
 
     private File mFile;
     private String timepath;
 
-    private CheckBox CbBasketball;
+
     private static final String IMAGE_UNSPECIFIED = "image/*";
 
     private static final int MY_PERMISSIONS_REQUEST_CAMERA = 1;
-    private List<Bitmap> bitmapList;
     /**
      * 照片参数
      */
